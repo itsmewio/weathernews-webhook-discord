@@ -4,7 +4,7 @@ const moment = require('moment-timezone');
 
 // Funktion zum Abrufen des Wetters
 async function getWeather(city) {
-    const apiKey = 'b4e7ac74b5767c4497a98eab9d4cfd7b'; // ÄNDERN! -> Erstelle dir ein Konto auf https://openweathermap.org/ und erstelle dir ein API-Key den du hier einfügst.
+    const apiKey = 'CHANGE_IT_TO_YOUR_API_KEY!'; // ÄNDERN! -> Erstelle dir ein Konto auf https://openweathermap.org/ und erstelle dir ein API-Key den du hier einfügst.
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;  //nicht ändern!
     try {
         const response = await axios.get(url);
